@@ -4,11 +4,12 @@
 
 <iframe id="foo" src="@Url.Action("Index", "Child")" name="child"></iframe>
 <script>
-    var url = 'http://www.google.com'
-    $('#foo').load(function (event) {
-        var element = event.target;
-        element.onunload(function() {
-            element.contentWindow.historey.replaceState(null, null, url);
-        });
-    });
+    var url = 'http://localhost:1800/about';
+    var element = window.document.getElementById('foo');
+    element.contentWindow.onload = function () {
+        element.contentWindow.onbeforeunload = function () {
+            console.log(element.contentWindow.location.href);
+            element.contentWindow.history.replaceState(null, null, url);
+        };
+    };
 </script>

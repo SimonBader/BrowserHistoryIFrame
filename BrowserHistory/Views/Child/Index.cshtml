@@ -5,15 +5,4 @@
 
 <h2>Index</h2>
 
-<form action="/Child/Create" method="get">
-    <input id="firstName" type="text" name="firstName" />
-    <input type="submit" value="Save" />
-</form>
-<a href="http://localhost:1800/Child/Create">This is a link</a>
-<script type="text/javascript">
-    var firstName = '@Model.FirstName';
-    console.debug('run changeHistory script');
-    console.debug(window.location);
-    history.replaceState(null, null, 'http://localhost:1800/Child/Create?firstName=' + firstName);
-</script>
 

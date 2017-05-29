@@ -27,8 +27,12 @@ namespace BrowserHistory
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
 
-            bundles.Add(new ScriptBundle("~/bundles/custom").Include(
-                        "~/Scripts/changeHistory.js"));
+            bundles.Add(new ScriptBundle("~/bundles/parent").Include(
+                        "~/Scripts/parentHistory.js",
+                        "~/Scripts/parentListener.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/child").Include(
+                        "~/Scripts/childBroadcaster.js"));
         }
     }
 }

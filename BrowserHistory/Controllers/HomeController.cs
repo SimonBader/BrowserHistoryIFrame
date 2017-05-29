@@ -13,6 +13,11 @@ namespace BrowserHistory.Controllers
             return View();
         }
 
+        public ActionResult Start()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

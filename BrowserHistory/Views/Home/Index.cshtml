@@ -2,14 +2,4 @@
     ViewBag.Title = "Home Page";
 }
 
-<iframe id="foo" src="@Url.Action("Index", "Child")" name="child"></iframe>
-<script>
-    var url = 'http://localhost:1800/about';
-    var element = window.document.getElementById('foo');
-    element.contentWindow.onload = function () {
-        element.contentWindow.onbeforeunload = function () {
-            console.log(element.contentWindow.location.href);
-            element.contentWindow.history.replaceState(null, null, url);
-        };
-    };
-</script>
+@Html.ActionLink("Press start", "Start")

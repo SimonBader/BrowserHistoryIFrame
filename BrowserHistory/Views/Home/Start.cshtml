@@ -1,0 +1,8 @@
+﻿
+@{
+    ViewBag.Title = "Start";
+}
+
+<iframe id="foo" src="@Url.Action("Index", "Child")" name="child"></iframe>
+@Scripts.Render("~/bundles/parent")
+

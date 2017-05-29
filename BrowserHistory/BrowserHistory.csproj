@@ -120,7 +120,6 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\ChildController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SampleController.cs" />
@@ -140,7 +139,9 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\changeHistory.js" />
+    <Content Include="Scripts\childBroadcaster.js" />
+    <Content Include="Scripts\parentListener.js" />
+    <Content Include="Scripts\parentHistory.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -152,7 +153,6 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Views\About\Index.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -169,6 +169,10 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Child\Index.cshtml" />
     <Content Include="Views\Child\Result.cshtml" />
+    <Content Include="Views\Child\About.cshtml" />
+    <Content Include="Views\Home\Start.cshtml" />
+    <Content Include="Views\Child\Error.cshtml" />
+    <Content Include="Views\Child\Start.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

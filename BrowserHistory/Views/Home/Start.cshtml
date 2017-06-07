@@ -1,8 +1,16 @@
 ﻿
 @{
-    ViewBag.Title = "Start";
+    ViewBag.Title = "ParentStart";
 }
 
-<iframe id="foo" src="@Url.Action("Index", "Child")" name="child"></iframe>
+<div>
+    <iframe id="foo" src="@Url.Action("Index", "Child")" name="child"></iframe>
+</div>
+<div>
+    <label>Another field</label>
+    <input type="text" name="parent_another_field" />
+</div>
+
+
 @Scripts.Render("~/bundles/parent")
 

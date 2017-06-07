@@ -11,7 +11,6 @@ namespace BrowserHistory.Controllers
 {
     public class ChildController : Controller
     {
-        private static string _firstName;
         private const string _cookieName = "UserSettings";
         private const string _cookieKey = "cookieKey";
         private const string _cookieVal = "cookieVal";
@@ -40,18 +39,17 @@ namespace BrowserHistory.Controllers
         public ActionResult Create(string firstName)
         {
             ExpireCookie();
-            _firstName = firstName;
-            return RedirectToAction("Result", new RouteValueDictionary { { "isRedirected", "true" } });
+            return RedirectToAction("Result", new RouteValueDictionary { { "isRedirected", "false" }, { "firstName", firstName } });
         }
 
-        public ActionResult Result(bool isRedirected = false)
+        public ActionResult Result(string firstName = null, bool isRedirected = false)
         {
             if(isRedirected)
             {
                 return RedirectToAction("About");
             }
 
-            return View(new Person() { FirstName=_firstName});
+            return View(new Person() { FirstName= firstName });
         }
 
         public ActionResult About()

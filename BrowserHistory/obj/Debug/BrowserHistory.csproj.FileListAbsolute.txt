@@ -77,4 +77,6 @@ C:\Projects\BrowserHistorySamples\BrowserHistoryFormSubmit\BrowserHistory\bin\An
 C:\Projects\BrowserHistorySamples\BrowserHistoryFormSubmit\BrowserHistory\bin\Newtonsoft.Json.xml
 C:\Projects\BrowserHistorySamples\BrowserHistoryFormSubmit\BrowserHistory\obj\Debug\BrowserHistory.dll
 C:\Projects\BrowserHistorySamples\BrowserHistoryFormSubmit\BrowserHistory\obj\Debug\BrowserHistory.pdb
+C:\Projects\BrowserHistorySamples\BrowserHistoryFormSubmit\BrowserHistory\bin\WebDriver.dll
+C:\Projects\BrowserHistorySamples\BrowserHistoryFormSubmit\BrowserHistory\bin\WebDriver.xml
 C:\Projects\BrowserHistorySamples\BrowserHistoryFormSubmit\BrowserHistory\obj\Debug\BrowserHistory.csprojResolveAssemblyReference.cache

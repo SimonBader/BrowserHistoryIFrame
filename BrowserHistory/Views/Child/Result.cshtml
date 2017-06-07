@@ -3,5 +3,12 @@
     ViewBag.Title = "Result";
 }
 
-<h2>@Model.FirstName</h2>
+<div>
+    <label>Result</label>
+    <input type="text" name="child_result" value="@Model.FirstName" readonly="readonly" />
+</div>
+<div>
+    <label>Another field</label>
+    <input type="text" name="child_another_field" />
+</div>
 

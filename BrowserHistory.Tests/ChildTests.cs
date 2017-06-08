@@ -15,9 +15,9 @@ namespace BrowserHistory.Tests
         [TestMethod]
         public void ChildFormSubmitTest()
         {
-            using (IWebDriver driver = new PhantomJSDriver())
+            using (IWebDriver driver = new ChromeDriver())
             {
-                driver.Navigate().GoToUrl("http://localhost:8080/");
+                driver.Navigate().GoToUrl("http://localhost:50850/");
                 IWebElement parentStartAction = driver.FindElement(By.Name("parent_start"));
                 parentStartAction.Click();
 

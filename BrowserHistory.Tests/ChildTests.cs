@@ -4,7 +4,6 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using BrowserHistory.Tests.Pages;
-using OpenQA.Selenium.PhantomJS;
 
 namespace BrowserHistory.Tests
 {

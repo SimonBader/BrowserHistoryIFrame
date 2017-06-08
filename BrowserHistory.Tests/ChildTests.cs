@@ -1,9 +1,9 @@
 ﻿using System;
+using BrowserHistory.Tests.Pages;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.PhantomJS;
 using OpenQA.Selenium.Support.UI;
-using BrowserHistory.Tests.Pages;
 
 namespace BrowserHistory.Tests
 {
@@ -14,9 +14,9 @@ namespace BrowserHistory.Tests
         [TestMethod]
         public void ChildFormSubmitTest()
         {
-            using (IWebDriver driver = new ChromeDriver())
+            using (IWebDriver driver = new PhantomJSDriver())
             {
-                driver.Navigate().GoToUrl("http://localhost:50850/");
+                driver.Navigate().GoToUrl("http://localhost:60123/");
                 IWebElement parentStartAction = driver.FindElement(By.Name("parent_start"));
                 parentStartAction.Click();
 

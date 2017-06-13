@@ -36,10 +36,10 @@ namespace BrowserHistory.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(string firstName)
+        public ActionResult Create(Person person)
         {
             ExpireCookie();
-            return RedirectToAction("Result", new RouteValueDictionary { { "isRedirected", "false" }, { "firstName", firstName } });
+            return RedirectToAction("Result", new RouteValueDictionary { { "isRedirected", "false" }, { "firstName", person.FirstName } });
         }
 
         public ActionResult Result(string firstName = null, bool isRedirected = false)

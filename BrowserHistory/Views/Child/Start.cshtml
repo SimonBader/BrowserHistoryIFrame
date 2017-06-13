@@ -1,4 +1,4 @@
-﻿
+﻿@model BrowserHistory.Models.Person
 @{
     ViewBag.Title = "Start";
 }
@@ -7,6 +7,8 @@
 
 @using (Html.BeginForm("Create", "Child", FormMethod.Post, null))
 {
-    <input id="firstName" type="text" name="firstName" />
+    @Html.TextBoxFor(x => x.FirstName)
+    @Html.TextBoxFor(x => x.DateOfBirth, @"{0:yyyy-MM-dd}", new { @type="date" })
+    @Html.ValidationMessageFor(x => x.DateOfBirth)
     <input type="submit" name="child_submit" value="Save" />
 }
